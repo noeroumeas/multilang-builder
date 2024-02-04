@@ -1,15 +1,27 @@
 {
   "name": "multilang-builder",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Generate a multilang website",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["multilang", "website", "builder", "web", "site", "builder", "tool", "lang", "language"],
+  "keywords": [
+    "multilang",
+    "website",
+    "builder",
+    "web",
+    "site",
+    "builder",
+    "tool",
+    "lang",
+    "language"
+  ],
   "author": "Noe Roumeas",
   "license": "ISC",
   "dependencies": {
+    "deepl-node": "^1.11.1",
+    "jsdom": "^24.0.0",
     "path": "0.12.7"
   },
   "repository": {
@@ -17,7 +29,9 @@
     "url": "https://github.com/noeroumeas/multilang-builder.git"
   },
   "bin": {
-    "buildLang": "bin/cli.js"
+    "buildLang": "bin/generateWebsite.js",
+    "extractTexts": "bin/extractTextsAndGenerateTemplates.js",
+    "translateTexts": "bin/translateTexts.js"
   },
   "homepage": "https://github.com/noeroumeas/multilang-builder"
 }
